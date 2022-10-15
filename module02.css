@@ -1,0 +1,96 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: monospace, "Lucida Console", "Courier New";
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+section {
+  float: right;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+  padding: 5px 15px;
+  width:25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#chickenSection {
+  background-color:Pink;
+}
+
+#beefSection {
+  background-color: rgb(125, 12, 24);
+  color: white;
+}
+
+
+#sushiSection {
+  background-color: rgb(237, 229, 123);
+}
+
+p {
+  margin-top: 40px;
+  padding: 10px;
+  width: 90%;
+  height: 25vp;
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+  
+}
+
+div {
+ background-color: #a7abab;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%; 
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .chicken, .beef, .sushi {
+    float: left;
+    border: 2px solid black;
+    margin: 1.5%;
+  }
+  .col-lg-4 {
+    width: 30%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .chicken, .beef, .sushi {
+    float: left;
+    border: 2px solid black;
+    margin: 1.5%;
+  }
+  .chicken, .beef {
+    width: 45%;
+  }
+
+  .sushi {
+    width: 93%;
+  }
+}
+
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .chicken, .beef, .sushi {
+    float: left;
+    border: 2px solid black;
+    margin: 1.5%;
+    width: 95%;
+  }
+}
